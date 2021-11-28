@@ -1,7 +1,9 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 const express = require('express');
 
 const app = express();
-const PORT = 3000;
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -11,6 +13,6 @@ const router = require('./app/router');
 
 app.use(router);
 
-app.listen(PORT, () => {
-	console.log(`Server listen on ${PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server listen on ${process.env.PORT}`);
 });

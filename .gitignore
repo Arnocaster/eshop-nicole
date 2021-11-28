@@ -1,2 +1,4 @@
 node_modules
 ressources_nicole
+.eslintrc
+.env
