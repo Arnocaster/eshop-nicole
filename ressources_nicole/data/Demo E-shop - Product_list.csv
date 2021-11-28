@@ -1,0 +1,19 @@
+id,product_id,category,name,brand,image,size,color,price_extax,price_discount_extax,stock
+1,1,watch,petite melrose,daniel wellington,1,Unisize,black,242,70,5
+2,2,bag,le pliage,longchamp,2,Unisize,green,105,99,10
+3,3,watch,petite st mawes,daniel wellington,3,28mm,white,119,59.50,3
+4,4,belt,croco chic,kenzo,4,Unisize,black,337.99,,1
+5,5,watch,air,claude bernard,5,27mm,pink gold,138,,2
+6,6,bag,dry corail,lancel,6,Unisize,corail,241.99,122,1
+7,7,watch,croisette,Lord Henry,7,42mm,gold,160,120,11
+8,8,bag,viperine,louis vuiton,8,Unisize,blue,645,,1
+9,9,watch,sportblack,Lord Henry,9,45mm,black,130,120,8
+10,10,bag,mamba noir,longchamp,10,Unisize,black,240,180,3
+11,11,watch,heaven,claude bernard,11,35mm,white,160,110,4
+12,12,belt,croco class,kenzo,12,Unisize,fushia,337.99,319.99,1
+13,13,watch,nightsky,Lord Henry,13,35mm,blue,280,140,1
+14,14,bag,rosemary,louis vuiton,14,Unisize,pink,320,290,4
+15,15,watch,revolution,Lord Henry,15,34mm,white,250,220,3
+16,2,bag,le pliage,longchamp,16,Unisize,red,105,99,4
+17,2,bag,le pliage,longchamp,17,Unisize,blue,105,99,6
+18,3,watch,petite st mawes,daniel wellington,3,32mm,white,119,59.50,3
