@@ -38,30 +38,6 @@ Copier coller la commande sous votre erreur. Elle ressemble à : ```git push --s
 Normalement, votre git est maintenant bien lié entre votre projet et votre espace Github
 <br>
 <br>
-<h4>Comment **supprimer** un dossier de Github pour pouvoir maintenant le mettre en .gitignore :</h4>
-<ol>
-<li>
- 
- ```git rm -r lenomdudossier```
- 
- </li>
-<li>
- 
- ```git add . (. pour tous le dossier courant)```
- 
- </li>
-<li>
- 
- ```git commit -m "mon message"```
- 
- </li>
-<li>
- 
- ``` git push ```
- 
- </li>
- 
-</ol>
 
 <h2>SQL</h2>
 <ol>
