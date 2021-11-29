@@ -95,10 +95,11 @@ Diverses commandes :
 On est parti du simple index.js -> listen pour arriver a la structure complète avec routeur, controller, dataMapper.
 Ici n'est indiqué que la forme avec le datamapper en pseudocode
 
-**Installation des NMP : **
+- <h4>Installation des NMP :</h4> 
 `NPM INSTALL express ejs dotenv eslint-config-airbnb pg`
 
-configuration du .env :
+- <h4>configuration du .env :</h4>
+
 ```
 #PORT EXPRESS
 PORT = 0000
@@ -111,28 +112,35 @@ PGPASSWORD = pwd
 PGPORT = 0000
 ```
 
+- <h4>index .js :</h4>
 
-index .js :
+```javascript
 require Dotenv
 require Express
 .Set EJS + .Static (3 commandes : 2 .set , 1 .use)
 require router
 
-MIDDELWARE Router => La suite dans ce module
+MIDDELWARE Router //=> La suite dans ce module
 
 .Listen(Port)
+```
 
-router.js :
+- <h4>router.js :</h4>
+
+```javascript
 require Express
 require Controllers
 appel a router (const router = express.Router());
 
-routes (router.get('/'),controller.methodeController) => La suite dans ce module
+routes (router.get('/'),controller.methodeController) //=> La suite dans ce module
 
 Middleware page 404
 Export du module
+```
 
-controller.js :
+- <h4>controller.js :</h4>
+
+```javascript
 require dataMapper
 
 ObjetController ={
@@ -145,31 +153,37 @@ ObjetController ={
       console.log("SQL ERROR : ",error);
     } sinon {
       //La requeste SQL est ok retourne "data"
-      reponse.render('vue',{nomdatadanslavue: data.rows });
+      reponse.render('vue',{nomdatadanslavue: data.rows }); //=> C'est la dernière fonction avant l'affichage de la page!!!!
     });
   }
 
 Export du module
+```
 
-database.js
-Require PG (on maitrise pas donc on copie sans se poser de questions pour l'instant) : 
+- <h4>database.js</h4>
+On maitrise pas les objets donc on copie sans se poser de questions pour l'instant : 
+```javascript
+Require PG 
+
 const { Client } = require('pg'); 
 
-Création d'un nouveau client :
 const client = new Client();
 
 client.connect();
 
 Export du module
+```
 
-dataMapper.js
+- <h4>dataMapper.js</h4>
+```javascript
 require database
 
 const dataMapper = {
   methodeSQL: (callback = paramèrte de dataMapper.methodeSQL )=>{
     const querySQL = requete SQL
-    client.query(querySQL,callback)
+    client.query(querySQL,callback) //C'est parce que l'on a besoin d'un callback dans client.query que nous devons le mettre en argument de la methodeSQL
   }
 }
+```
 
 
