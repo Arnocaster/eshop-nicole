@@ -80,7 +80,7 @@ Diverses commandes :
 - Lister les tables : \dt 
 - Voir les informations d'une table précise : \d lenomdelatable 
 Jordane DEVÉMY [Yggdrasil] — Hier à 13:32
- Mise en place d'ESLINT avec la config AIRBNB :
+ <h2>Mise en place d'ESLINT avec la config AIRBNB :</h2>
 
 - Installation du package AirBnB : npm i eslint-config-airbnb
 - Création d'un .eslinrc, y ajouter à l'intérieur :
