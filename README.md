@@ -4,7 +4,7 @@
 <ol>
 <li>
  
- ```Créer votre repo sur Github.com et copier l'adresse ssh```
+Créer votre repo sur `Github.com` et copier l'adresse ssh
  
  </li>
 <li>
@@ -39,7 +39,6 @@ Normalement, votre git est maintenant bien lié entre votre projet et votre espa
 <br>
 <br>
 <h4>Comment **supprimer** un dossier de Github pour pouvoir maintenant le mettre en .gitignore :</h4>
-<br>
 <ol>
 <li>
  
