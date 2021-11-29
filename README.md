@@ -1,12 +1,65 @@
 <h2>GITHUB</h2>
-Comment supprimer un dossier de Github pour pouvoir maintenant le mettre en .gitignore :
+**Lien entre votre repo existant et votre dossier** : 
+<ol>
+<li>
+ 
+ ```Créer votre repo sur Github.com et copier l'adresse ssh```
+ 
+ </li>
+<li>
+ 
+ ```git init```
+ 
+ </li>
+<li> On ajoute une remote pour pouvoir push sur le repos. Elle s'appelle ici ```origin```
+ 
+ ```git remote add origin git remote add origin <VOTRE LIEN SSH REPO GITHUB>```
+ 
+ </li>
+<li>
+ 
+ ```git add .```
+ 
+ </li>
+<li>
+ 
+ ```git commit -m "<VOTRE MESSAGE>"```
+ 
+ </li>
+<li>
+ 
+ ```git push```<br>
+En cas de "fatal: The current branch master has no upstream branch. To push the current branch and set the remote as upstream, use
+Copier coller la commande sous votre erreur. Elle ressemble à : ```git push --set-upstream origin master```
+ 
+ </li>
+ </ol>
+Normalement, votre git est maintenant bien lié entre votre projet et votre espace Github
+
+<br>
+Comment **supprimer** un dossier de Github pour pouvoir maintenant le mettre en .gitignore :
 <br>
 <ol>
+<li>
  
-<li> ```git rm -r lenomdudossier```</li>
-<li> ```git add . (. pour tous le dossier courant)```</li>
-<li> ```git commit -m "mon message"```</li>
-<li>``` git push ```</li>
+ ```git rm -r lenomdudossier```
+ 
+ </li>
+<li>
+ 
+ ```git add . (. pour tous le dossier courant)```
+ 
+ </li>
+<li>
+ 
+ ```git commit -m "mon message"```
+ 
+ </li>
+<li>
+ 
+ ``` git push ```
+ 
+ </li>
  
 </ol>
 
