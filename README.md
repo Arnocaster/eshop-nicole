@@ -1,5 +1,5 @@
 <h2>GITHUB</h2>
-Lien entre votre repo existant et votre dossier
+<h4>Lien entre votre repo existant et votre dossier</h4>
 
 <ol>
 <li>
@@ -36,9 +36,9 @@ Copier coller la commande sous votre erreur. Elle ressemble à : ```git push --s
  </li>
  </ol>
 Normalement, votre git est maintenant bien lié entre votre projet et votre espace Github
-
 <br>
-Comment **supprimer** un dossier de Github pour pouvoir maintenant le mettre en .gitignore :
+<br>
+<h4>Comment **supprimer** un dossier de Github pour pouvoir maintenant le mettre en .gitignore :</h4>
 <br>
 <ol>
 <li>
@@ -68,34 +68,34 @@ Comment **supprimer** un dossier de Github pour pouvoir maintenant le mettre en 
 <ol>
  <li>
   
-  Se connecter a la BDD en superuser : `sudo -u postgres psql`
+  Se connecter a la BDD en superuser :<br> `sudo -u postgres psql`
  
  </li>
  <li>
   
-  Créer un User : `postgres=# create user monuser with encrypted password 'mypassword';`
+  Créer un User :<br> `postgres=# create user monuser with encrypted password 'mypassword';`
  
  </li>
 <li>
  
- Créer une BDD PUIS Ajouter user : `CREATE DATABASE madatabase; PUIS ALTER DATABASE madatabase OWNER TO monuser`;
- VARIANTE : Etape 3-1 en une étape : `CREATE DATABASE madatabase OWNER monuser;`  
+ Créer une BDD PUIS Ajouter user :<br> `CREATE DATABASE madatabase; PUIS ALTER DATABASE madatabase OWNER TO monuser;`<br>
+ VARIANTE : Etape 3-1 en une étape :<br> `CREATE DATABASE madatabase OWNER monuser;`  
  
  </li>
 <li>
  
- Donner les droits daccès à mon user : `postgres=# grant all privileges on database sample_db to monuser;`
+ Donner les droits daccès à mon user :<br> `postgres=# grant all privileges on database sample_db to monuser;`
  
  </li>
  <li>
   
-  Se connecter à la BDD : `psql -h 127.0.0.1 -p 5432 -U monuser -d madatabase`
+  Se connecter à la BDD :<br> `psql -h 127.0.0.1 -p 5432 -U monuser -d madatabase`
  
  </li>
 <li>
     
-   Création de table via fichier script SQL (-f) : `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase -f cheminduscript`<br>
-   VARIANTE :  Création de table via fichier script SQL (<) : `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase < cheminduscript`  
+   Création de table via fichier script SQL (-f) :<br> `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase -f cheminduscript`<br>
+    VARIANTE Création de table via fichier script SQL (<) :<br> `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase < cheminduscript`  
  
  </li>
 </ol>
