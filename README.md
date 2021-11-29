@@ -101,11 +101,10 @@ Normalement, votre git est maintenant bien lié entre votre projet et votre espa
 </ol>
  
 Diverses commandes :
-- Lister les users : \du (moyen mémo-technique d pour display et u pour users
-- Lister les BDD :  \l
-- Lister les tables : \dt 
-- Voir les informations d'une table précise : \d lenomdelatable 
-Jordane DEVÉMY [Yggdrasil] — Hier à 13:32
+- Lister les users : `\du` (moyen mémo-technique d pour display et u pour users
+- Lister les BDD :  `\l`
+- Lister les tables : `\dt` 
+- Voir les informations d'une table précise : `\d lenomdelatable `
 
 <h2>ESLINT avec la config AIRBNB :</h2>
 
