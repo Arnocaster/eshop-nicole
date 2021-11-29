@@ -1,5 +1,6 @@
 <h2>GITHUB</h2>
-**Lien entre votre repo existant et votre dossier** : 
+Lien entre votre repo existant et votre dossier
+
 <ol>
 <li>
  
@@ -65,14 +66,38 @@ Comment **supprimer** un dossier de Github pour pouvoir maintenant le mettre en 
 
 <h2>SQL</h2>
 <ol>
- <li>Se connecter a la BDD en superuser : `sudo -u postgres psql`</li>
- <li>Créer un User : `postgres=# create user monuser with encrypted password 'mypassword';`</li>
-<li>Créer une BDD PUIS Ajouter user : `CREATE DATABASE madatabase; PUIS ALTER DATABASE madatabase OWNER TO monuser`;
- VARIANTE : Etape 3-1 en une étape : `CREATE DATABASE madatabase OWNER monuser;`  </li>
-<li>Donner les droits daccès à mon user : `postgres=# grant all privileges on database sample_db to monuser;`</li>
- <li>Se connecter à la BDD : `psql -h 127.0.0.1 -p 5432 -U monuser -d madatabase`</li>
-<li>Création de table via fichier script SQL (-f) : `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase -f cheminduscript`<br>
-   VARIANTE :  Création de table via fichier script SQL (<) : `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase < cheminduscript`  </li>
+ <li>
+  
+  Se connecter a la BDD en superuser : `sudo -u postgres psql`
+ 
+ </li>
+ <li>
+  
+  Créer un User : `postgres=# create user monuser with encrypted password 'mypassword';`
+ 
+ </li>
+<li>
+ 
+ Créer une BDD PUIS Ajouter user : `CREATE DATABASE madatabase; PUIS ALTER DATABASE madatabase OWNER TO monuser`;
+ VARIANTE : Etape 3-1 en une étape : `CREATE DATABASE madatabase OWNER monuser;`  
+ 
+ </li>
+<li>
+ 
+ Donner les droits daccès à mon user : `postgres=# grant all privileges on database sample_db to monuser;`
+ 
+ </li>
+ <li>
+  
+  Se connecter à la BDD : `psql -h 127.0.0.1 -p 5432 -U monuser -d madatabase`
+ 
+ </li>
+<li>
+    
+   Création de table via fichier script SQL (-f) : `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase -f cheminduscript`<br>
+   VARIANTE :  Création de table via fichier script SQL (<) : `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase < cheminduscript`  
+ 
+ </li>
 </ol>
  
 Diverses commandes :
