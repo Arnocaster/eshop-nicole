@@ -16,7 +16,7 @@ Créer votre repo sur `Github.com` et copier l'adresse ssh
  ```git init```
  
  </li>
-<li> On ajoute une remote pour pouvoir push sur le repos. Elle s'appelle ici ```origin```
+<li> On ajoute une remote pour pouvoir push sur le repos. Elle s'appelle ici `origin`
  
  ```git remote add origin git remote add origin <VOTRE LIEN SSH REPO GITHUB>```
  
