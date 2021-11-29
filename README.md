@@ -1,3 +1,7 @@
+<h2>Note</h2>
+Quoi le code n'est pas commenté!?
+Et oui il faut s'aider du pseudocode ci dessous pour comprendre chaque fonction petit a petit.
+
 <h2>GITHUB</h2>
 <h4>Lien entre votre repo existant et votre dossier</h4>
 
