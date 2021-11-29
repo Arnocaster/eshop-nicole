@@ -1,3 +1,17 @@
-<% include('partials/header')%>
-TEST
-<% include('partials/footer')%>
+<%- include('partials/header')%>
+
+<% console.log(products)%>
+<main class="products__container">
+<% for (thisProduct of products){%>
+  <article class="product__article">
+  <a href="#">
+    <img class="product__image" src="/img/products/<%= thisProduct.image%>-1000x1000.jpg" alt="<%= thisProduct.name %>">
+  </a>
+  <footer class="product__footer">
+  <h3 class="product--name"><%= thisProduct.name%></h3>
+  <p class="product--price">$<%= thisProduct.price_extax%></p>
+  </footer>
+  </article>
+  <%}%>
+</main>
+<%- include('partials/footer')%>
