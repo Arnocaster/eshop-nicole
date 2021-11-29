@@ -64,36 +64,43 @@ Comment **supprimer** un dossier de Github pour pouvoir maintenant le mettre en 
 </ol>
 
 <h2>SQL</h2>
-
-ETAPE 1. Se connecter a la BDD en superuser : sudo -u postgres psql
-ETAPE 2. Créer un User : postgres=# create user monuser with encrypted password 'mypassword';
-ETAPE 3. Créer une BDD PUIS Ajouter user : CREATE DATABASE madatabase; PUIS ALTER DATABASE madatabase OWNER TO monuser;
--> ETAPE 3bis. Etape 3-1 en une étape : CREATE DATABASE madatabase OWNER monuser;  <-
-ETAPE 4. Donner les droits d'accès à mon user : postgres=# grant all privileges on database sample_db to monuser;
-ETAPE 5. Se connecter à la BDD : psql -h 127.0.0.1 -p 5432 -U monuser -d madatabase
-ETAPE 6. Création de table via fichier script SQL (-f) : psql -h 127.0.0.1 -p5432 -U monuser -d madatabase -f cheminduscript
--> ETAPE 6bis. Création de table via fichier script SQL (<) : psql -h 127.0.0.1 -p5432 -U monuser -d madatabase < cheminduscript  <-
-
+<ol>
+ <li>Se connecter a la BDD en superuser : `sudo -u postgres psql`</li>
+ <li>Créer un User : `postgres=# create user monuser with encrypted password 'mypassword';`</li>
+<li>Créer une BDD PUIS Ajouter user : `CREATE DATABASE madatabase; PUIS ALTER DATABASE madatabase OWNER TO monuser`;
+ VARIANTE : Etape 3-1 en une étape : `CREATE DATABASE madatabase OWNER monuser;`  </li>
+<li>Donner les droits daccès à mon user : `postgres=# grant all privileges on database sample_db to monuser;`</li>
+ <li>Se connecter à la BDD : `psql -h 127.0.0.1 -p 5432 -U monuser -d madatabase`</li>
+<li>Création de table via fichier script SQL (-f) : `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase -f cheminduscript`<br>
+   VARIANTE :  Création de table via fichier script SQL (<) : `psql -h 127.0.0.1 -p5432 -U monuser -d madatabase < cheminduscript`  </li>
+</ol>
+ 
 Diverses commandes :
 - Lister les users : \du (moyen mémo-technique d pour display et u pour users
 - Lister les BDD :  \l
 - Lister les tables : \dt 
 - Voir les informations d'une table précise : \d lenomdelatable 
 Jordane DEVÉMY [Yggdrasil] — Hier à 13:32
- <h2>Mise en place d'ESLINT avec la config AIRBNB :</h2>
 
-- Installation du package AirBnB : npm i eslint-config-airbnb
-- Création d'un .eslinrc, y ajouter à l'intérieur :
+<h2>ESLINT avec la config AIRBNB :</h2>
+
+- Installation du package AirBnB : `npm i eslint-config-airbnb`
+- Création d'un fichier `.eslinrc` à la racine du répertoire, y ajouter à l'intérieur :
+```
 {
     "extends": "airbnb"
 }
+```
 
 <h2>JS</h2>
-On est parti du simple index.js pour arriver a la structure complète avec routeur, controller, dataMapper.
+On est parti du simple index.js -> listen pour arriver a la structure complète avec routeur, controller, dataMapper.
+Ici n'est indiqué que la forme avec le datamapper en pseudocode
 
-Installation des NMP : NPM INSTALL express ejs dotenv eslint-config-airbnb pg
+**Installation des NMP : **
+`NPM INSTALL express ejs dotenv eslint-config-airbnb pg`
 
 configuration du .env :
+```
 #PORT EXPRESS
 PORT = 0000
 
@@ -103,8 +110,8 @@ PGHOST = hostname
 PGDATABASE = ddbname
 PGPASSWORD = pwd
 PGPORT = 0000
+```
 
-Ici n'est indiqué que la forme avec le datamapper en pseudocode
 
 index .js :
 require Dotenv
