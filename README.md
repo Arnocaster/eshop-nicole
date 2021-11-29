@@ -1,11 +1,14 @@
-GITHUB
+<h2>GITHUB</h2>
 Comment supprimer un dossier de Github pour pouvoir maintenant le mettre en .gitignore :
-ÉTAPE 1. git rm -r lenomdudossier
-ÉTAPE 2. git add . (. pour tous le dossier courant)
-ÉTAPE 3. git commit -m "mon message"
-ÉTAPE 4. git push 
+<br>
+<ol>
+<li> ```git rm -r lenomdudossier```</li>
+<li> ```git add . (. pour tous le dossier courant)```</li>
+<li> ```git commit -m "mon message"```</li>
+<li>``` git push ```</li>
+</ol>
 
-SQL :
+<h2>SQL</h2>
 
 ETAPE 1. Se connecter a la BDD en superuser : sudo -u postgres psql
 ETAPE 2. Créer un User : postgres=# create user monuser with encrypted password 'mypassword';
@@ -30,7 +33,7 @@ Jordane DEVÉMY [Yggdrasil] — Hier à 13:32
     "extends": "airbnb"
 }
 
-JS
+<h2>JS</h2>
 On est parti du simple index.js pour arriver a la structure complète avec routeur, controller, dataMapper.
 
 Installation des NMP : NPM INSTALL express ejs dotenv eslint-config-airbnb pg
