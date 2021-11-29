@@ -2,10 +2,12 @@
 Comment supprimer un dossier de Github pour pouvoir maintenant le mettre en .gitignore :
 <br>
 <ol>
+ 
 <li> ```git rm -r lenomdudossier```</li>
 <li> ```git add . (. pour tous le dossier courant)```</li>
 <li> ```git commit -m "mon message"```</li>
 <li>``` git push ```</li>
+ 
 </ol>
 
 <h2>SQL</h2>
